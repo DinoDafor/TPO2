@@ -1,8 +1,7 @@
 public class Logarithms {
 
-    //todo понять логику, заменить надписи
-    //todo Writer не выводит значения логарифмов на консоль, исправить
-    public Double ln(Double x) {
+
+    public Double calculateLn(Double x) {
         if (x <= 0.0 || x.isNaN() || x.isInfinite()) {
             return Double.NaN;
         }
@@ -20,18 +19,18 @@ public class Logarithms {
         Writer.write(x, sum, "Ln");
         return sum;
     }
-    public Double log2(double x) {
-        double result = ln(x)/ ln(2.0);
+    public Double calculateLog2(double x) {
+        double result = calculateLn(x)/ calculateLn(2.0);
         Writer.write(x, result, "Log_2");
         return result ;
     }
-    public Double log3(double x) {
-        double result = ln(x)/ ln(3.0);
+    public Double calculateLog3(double x) {
+        double result = calculateLn(x)/ calculateLn(3.0);
         Writer.write(x, result, "Log_3");
         return result;
     }
-    public Double log5(double x) {
-        double result = ln(x)/ ln(5.0);
+    public Double calculateLog5(double x) {
+        double result = calculateLn(x)/ calculateLn(5.0);
         Writer.write(x, result, "Log_5");
         return result;
     }

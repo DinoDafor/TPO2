@@ -12,10 +12,10 @@ public class MathSystems {
     public double getResult(double x) {
         double result;
         if (x > 0) {
-            double ln = logarithms.ln(x);
-            double log_2 = logarithms.log2(x);
-            double log_3 = logarithms.log3(x);
-            double log_5 = logarithms.log5(x);
+            double ln = logarithms.calculateLn(x);
+            double log_2 = logarithms.calculateLog2(x);
+            double log_3 = logarithms.calculateLog3(x);
+            double log_5 = logarithms.calculateLog5(x);
             result = ((((Math.pow((log_5 * log_5), 2)) * log_3) * (log_3 / log_2)) / ((ln + (Math.pow(log_2, 3))) * (log_2 * ln)));
         } else {
             double sin = trigonometricFunctions.getSin(x);
